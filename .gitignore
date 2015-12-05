@@ -50,7 +50,6 @@ crashlytics-build.properties
 *.pydevproject
 .metadata
 .gradle
-gradle/
 bin/
 tmp/
 *.tmp
