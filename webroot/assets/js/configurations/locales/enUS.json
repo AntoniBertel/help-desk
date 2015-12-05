@@ -1,0 +1,17 @@
+{
+  "directives.login.title": "Login",
+  "directives.login.emailRequired": "Your email is required",
+  "directives.login.emailInvalid": "Your email is invalid",
+  "directives.login.passwordShort": "Password is too short",
+  "directives.login.passwordRequired": "Your password is required",
+  "directives.login.submit": "Submit",
+  "directives.register.title": "Register",
+  "directives.register.emailRequired": "Your email is required",
+  "directives.register.emailInvalid": "Your email is invalid",
+  "directives.register.passwordShort": "Password is too short",
+  "directives.register.passwordRequired": "Your password is required",
+  "directives.register.passwordConfirm": "Confirm your password",
+  "directives.register.submit": "Submit",
+  "response.user.added": "You successful registered",
+  "response.user.not.added": "User not added"
+}

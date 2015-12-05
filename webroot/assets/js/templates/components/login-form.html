@@ -1,0 +1,48 @@
+<div class="login-container">
+  <header>
+    <h1 translate="directives.login.title"></h1>
+  </header>
+  <form name="loginForm" ng-submit="submit()" novalidate>
+    <div class="group-errors">
+      <span ng-show="submitMessage">
+        <small class="error">
+          {{submitMessage}}
+        </small>
+    </span>
+    </div>
+    <div class="form-group">
+      <input type="email"
+             name="email"
+             placeholder="Email"
+             ng-model="login.email"
+             ng-model-options="{ debounce: 500 }"
+             required>
+      <div class="group-errors" ng-show="loginForm.$submitted || loginForm.email.$touched">
+        <span ng-show="loginForm.email.$error.required">
+            <small class="error" translate="directives.login.emailRequired"></small>
+          </span>
+          <span ng-show="loginForm.email.$error.email">
+            <small class="error" translate="directives.login.emailInvalid"></small>
+          </span>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="password"
+             name="password"
+             placeholder="Password"
+             ng-model="login.password"
+             ng-model-options="{ debounce: 500 }"
+             ng-minlength="3"
+             required>
+      <div class="group-errors" ng-show="loginForm.$submitted || loginForm.password.$touched">
+        <span ng-show="loginForm.password.$error.minlength">
+          <small class="error" translate="directives.login.passwordShort"></small>
+        </span>
+        <span ng-show="loginForm.password.$error.required">
+          <small class="error" translate="directives.login.passwordRequired"></small>
+        </span>
+      </div>
+    </div>
+    <button type="submit" class="button tiny radius" translate="directives.login.submit">Submit</button>
+  </form>
+</div>
