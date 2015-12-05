@@ -51,8 +51,6 @@ crashlytics-build.properties
 .metadata
 .gradle
 gradle/
-gradlew
-gradlew.bat
 bin/
 tmp/
 *.tmp
