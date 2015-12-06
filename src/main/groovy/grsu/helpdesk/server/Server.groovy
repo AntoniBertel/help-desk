@@ -23,7 +23,7 @@ class Server extends GroovyVerticle {
         })
         mainApi.mountSubRouter(UserRouting.PATH, userApi)
 
-        vertx.createHttpServer().requestHandler({ request -> mainApi.accept(request) }).listen(8080)
+        vertx.createHttpServer().requestHandler({ request -> mainApi.accept(request) }).listen(81)
         future.complete()
     }
 

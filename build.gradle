@@ -51,5 +51,4 @@ task wrapper(type: Wrapper) {
 }
 
 task stage {
-
 }
