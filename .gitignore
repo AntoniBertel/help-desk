@@ -139,3 +139,9 @@ gradle-app.setting
 
 ### Vertx template
 .vertx/
+
+### help-desk UI template
+webroot/assets
+webroot/scripts
+webroot/styles
+webroot/index.html

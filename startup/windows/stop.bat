@@ -1,1 +1,0 @@
-TASKKILL /FI "WINDOWTITLE eq help-desk
